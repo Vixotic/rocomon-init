@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css ">
+</head>
+<body>
+    <div class="container">
+        <div class="transition">
+            <div class="cover cover1"></div> 
+            <div class="cover cover2"></div>
+            <div class="cover cover3"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li style="--i:4"><a href="http://127.0.0.1:5500/pokemon-style-game-main/index.html" class="link">NEW GAME</a></li>
+                <li style="--i:3"><a href="./index.html">LOAD GAME</a></li>
+                <li style="--i:2"><a href="#">HIGH SCORE</a></li>
+                <li style="--i:1"><a href="http://127.0.0.1:5500/pokemon-style-game-main/start.html">QUIT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const link = document.querySelector(".link");
+        const transition = document.querySelector(".transition");
+        link.addEventListener("click", (e) => {
+        e.preventDefault();
+        transition.classList.add("slide");
+        setTimeout(() => {
+            window.location = link.href;
+        }, 700);
+        });
+    </script>
+</body>
+</html>
