@@ -26,7 +26,7 @@ We welcome contributions and bug reports! If you'd like to contribute, fork the 
 
 ## Credits
 
-Developed by [Your Name] and [Your Friend's Name]
+Developed by Bikram Jena and Sumit Mishra
 
 ## License
 
